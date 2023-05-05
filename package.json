@@ -4,16 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "build": "NODE_ENV = production eleventy --pathprefix 'my-eleventy-website' ",
-    "watch:sass": "sass src/static/scss:public/static/css --watch",
-"build:sass": "sass src/static/scss:public/static/css",
-"watch:eleventy": "eleventy --serve",
-"build:eleventy": "ELEVENTY_ENV=development eleventy",
-"start": "npm run watch:eleventy & npm run watch:sass",
+    "start": "eleventy --serve",
+     "build": "NODE_ENV = production eleventy --pathprefix 'my-eleventy-website' "
+  
 
-"build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
-"build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
-"build:prod": "npm run build:eleventy:prod & npm run build:sass:prod"
   },
   "keywords": [],
   "author": "",
